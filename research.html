@@ -104,6 +104,13 @@ racial hierarchy is achieved.</p>
       bureaucratic entrepreneurs within the institution itself.]
   </p>
 </div>
+<button onclick="toggleAbstract('abstract1', this)"
+      style="margin-top: 8px; background: none; border: none; padding: 0;
+             font-family: -apple-system, sans-serif; font-size: 0.78rem;
+             color: #6b6b6b; cursor: pointer; letter-spacing: 0.03em;">
+      + abstract
+    </button>
+  </div>
           
 <div class="wip-item">
   <span class="wip-title">"The Efficacy of a 'Digital Witness' for Transnational Advocacy Organizations."</span>
@@ -126,6 +133,13 @@ racial hierarchy is achieved.</p>
       Ukraine and Sudan.]
   </p>
 </div>
+<button onclick="toggleAbstract('abstract2', this)"
+      style="margin-top: 8px; background: none; border: none; padding: 0;
+             font-family: -apple-system, sans-serif; font-size: 0.78rem;
+             color: #6b6b6b; cursor: pointer; letter-spacing: 0.03em;">
+      + abstract
+    </button>
+  </div>
 
 <div class="wip-item">
   <span class="wip-title">"Third-Country Deportations and the Racial Hierarchy of Migration Diplomacy."</span>
@@ -147,6 +161,29 @@ racial hierarchy is achieved.</p>
       of global third-country deportation dyads, disaggregated by agreement type]
   </p>
 </div>
+<button onclick="toggleAbstract('abstract3', this)"
+      style="margin-top: 8px; background: none; border: none; padding: 0;
+             font-family: -apple-system, sans-serif; font-size: 0.78rem;
+             color: #6b6b6b; cursor: pointer; letter-spacing: 0.03em;">
+      + abstract
+    </button>
+  </div>
+
+</div>
+
+<!-- Toggle script -->
+<script>
+function toggleAbstract(id, btn) {
+  const el = document.getElementById(id);
+  if (el.style.display === 'none') {
+    el.style.display = 'block';
+    btn.textContent = '− abstract';
+  } else {
+    el.style.display = 'none';
+    btn.textContent = '+ abstract';
+  }
+}
+</script>
 
       <!-- ====== WORKS IN PROGRESS ====== -->
       <div class="section-block">
